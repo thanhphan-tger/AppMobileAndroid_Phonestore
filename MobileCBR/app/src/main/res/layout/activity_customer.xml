@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_cus"
+    tools:context=".activity.Customer">
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="100dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_cusinfo"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Thông tin người mua"
+            android:textColor="#00F7FF"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            app:hintTextColor="#00F7FF"
+            app:boxStrokeColor="#00F7FF"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtCusName"
+                android:hint="Họ và tên"
+                android:textSize="20dp"
+                android:background="#00101010"
+                android:textColor="#EAD734"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            app:hintTextColor="#00F7FF"
+            app:boxStrokeColor="#00F7FF"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtCusAddress"
+                android:hint="Địa chỉ"
+                android:textSize="20dp"
+                android:background="#00101010"
+                android:textColor="#EAD734"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            app:hintTextColor="#00F7FF"
+            app:boxStrokeColor="#00F7FF"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtCusPhone"
+                android:hint="Số ĐT"
+                android:textSize="20dp"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:background="#00101010"
+                android:textColor="#EAD734"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnConfim"
+                android:text="Xác nhận"
+                android:background="@drawable/bg_btn"
+                android:layout_weight="5"
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:text="Trở về"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/bg_btn"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
